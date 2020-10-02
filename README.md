@@ -3,8 +3,9 @@
 
 # Summary
 
-
 Description: This image depicts the finalized goal, which is to output nutrition, healthy, and immunity score information from an inputted image. 
+
+![Image](images/project-infographic.png)
 
 # Introduction
 
