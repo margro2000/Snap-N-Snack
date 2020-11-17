@@ -1,0 +1,1168 @@
+2020-11-17 15:34:17,407 INFO    MainThread:71821 [internal.py:wandb_internal():63] W&B internal server running at pid: 71821
+2020-11-17 15:34:17,409 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: check_version
+2020-11-17 15:34:17,409 INFO    WriterThread:71821 [datastore.py:open_for_write():76] open: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/run-3fd8bez1.wandb
+2020-11-17 15:34:17,410 DEBUG   SenderThread:71821 [sender.py:send():90] send: header
+2020-11-17 15:34:17,410 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:34:17,410 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: check_version
+2020-11-17 15:34:17,413 DEBUG   Thread-4  :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2020-11-17 15:34:17,488 DEBUG   Thread-4  :71821 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51661
+2020-11-17 15:34:17,515 DEBUG   SenderThread:71821 [sender.py:send():90] send: run
+2020-11-17 15:34:17,523 INFO    SenderThread:71821 [sender.py:_maybe_setup_resume():281] checking resume status for None/snapnsnack/3fd8bez1
+2020-11-17 15:34:17,526 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:17,591 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:17,600 DEBUG   SenderThread:71821 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/davinan/Dropbox/github/Snap-N-Snack, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-17 15:34:17,618 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:17,784 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:17,790 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: run_start
+2020-11-17 15:34:17,794 INFO    SenderThread:71821 [dir_watcher.py:__init__():164] watching files in: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files
+2020-11-17 15:34:17,794 INFO    SenderThread:71821 [sender.py:_start_run_threads():490] run started: 3fd8bez1 with start time 1605645256
+2020-11-17 15:34:17,794 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:17,795 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:17,800 DEBUG   HandlerThread:71821 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/davinan/Dropbox/github/Snap-N-Snack, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-17 15:34:17,833 DEBUG   HandlerThread:71821 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/davinan/Dropbox/github/Snap-N-Snack, universal_newlines=False, shell=None, istream=None)
+2020-11-17 15:34:17,877 DEBUG   SenderThread:71821 [sender.py:send():90] send: files
+2020-11-17 15:34:17,877 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-17 15:34:17,881 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:34:17,881 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:34:17,881 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:34:17,884 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:17,884 DEBUG   Thread-11 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:17,967 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:17,969 DEBUG   SenderThread:71821 [sender.py:send():90] send: config
+2020-11-17 15:34:17,987 DEBUG   Thread-11 :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:17,997 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:18,016 DEBUG   Thread-11 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-17 15:34:18,110 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:18,118 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:18,119 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:18,119 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:18,329 DEBUG   Thread-11 :71821 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/davinan/snapnsnack/3fd8bez1/wandb-metadata.json?Expires=1605731657&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=KPNdQ9hkLZsi30x68HCwANby3SjYzYXVetDUrIayyMn9Dk0F12v0poWI5mhdAzp7Yv7Y9Mls%2FQQ7VC%2B9ktYMl2oofwXlrR%2FAeW7YZ57wvj83it3vWKpt6NJyg8084DvXUxWhgZt8oaC6cmoAd0S5MXvA7AOZzWn7%2FlLiFxZt79stzpweOha1vSiz1w5ydAIJZgDX3a9TtZOFdn6IffbpdntCSDV3aU52JI8RSFrucGiEAkIfa8tDwSwKtw5IPmgSsdFpAleybNdpcBpkMy88UPquYWVEGVX22TyPhDWZtGDGhNNMdzwMA89OuW7RXh9qsifVS%2Bu7o2VsXgUAXR0gjg%3D%3D HTTP/1.1" 200 0
+2020-11-17 15:34:18,331 INFO    Thread-11 :71821 [upload_job.py:push():131] Uploaded file /var/folders/20/4t1z1p3d37d1171d6vss07j80000gn/T/tmpb2nilj5fwandb/3iz74xx4-wandb-metadata.json
+2020-11-17 15:34:18,500 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:18,500 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:18,501 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:18,796 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/config.yaml
+2020-11-17 15:34:18,796 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_created():212] file/dir created: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/requirements.txt
+2020-11-17 15:34:18,796 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_created():212] file/dir created: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:18,796 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_created():212] file/dir created: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-metadata.json
+2020-11-17 15:34:18,796 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_created():212] file/dir created: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:34:18,825 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:18,825 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:18,826 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:19,189 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:19,189 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:19,190 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:19,798 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:19,945 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:19,945 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:19,946 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:19,947 DEBUG   Thread-5  :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:20,122 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:20,239 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:20,240 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:20,240 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:20,523 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:20,531 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:20,531 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:20,794 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:20,794 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:20,794 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:20,799 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:21,175 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:21,676 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:21,676 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:21,677 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:21,804 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:21,970 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:21,970 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:21,972 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:22,065 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:22,276 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:22,291 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:22,292 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:22,577 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:22,577 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:22,577 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:22,807 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:22,871 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:22,871 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:22,871 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:23,144 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:23,144 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:23,144 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:23,444 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:23,444 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:23,445 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:23,732 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:23,732 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:23,733 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:23,808 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:24,017 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:24,032 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:24,033 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:24,119 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:24,311 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:24,311 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:24,312 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:24,596 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:24,596 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:24,597 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:24,812 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:24,904 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:24,904 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:24,905 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:25,656 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:25,704 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:25,704 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:25,705 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:25,813 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:26,016 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:26,016 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:26,017 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:26,478 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:26,478 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:26,480 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:26,658 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:26,805 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:26,813 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:26,814 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:26,816 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:27,120 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:27,120 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:27,121 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:27,422 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:27,422 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:27,422 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:27,711 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:27,712 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:27,712 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:27,821 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:28,042 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:28,042 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:28,043 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:28,336 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:28,336 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:28,337 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:28,657 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:28,657 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:28,658 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:28,822 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:28,824 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:28,965 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:28,966 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:28,966 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:29,622 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:29,622 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:29,622 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:29,825 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:29,922 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:29,923 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:29,923 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:30,148 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:30,797 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:30,800 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:30,801 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:30,828 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:30,911 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:31,142 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:31,142 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:31,142 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:31,468 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:31,468 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:31,469 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:31,808 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:31,808 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:31,809 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:31,828 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:32,146 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:32,146 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:32,147 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:32,484 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:32,484 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:32,485 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:32,797 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:32,797 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:32,797 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:32,832 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:32,972 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:34:32,973 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:34:32,973 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:34:32,980 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:33,049 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:33,133 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:33,133 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:33,135 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:33,230 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:33,469 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:33,469 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:33,469 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:33,820 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:33,833 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:33,836 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:33,836 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:34,130 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:34,131 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:34,131 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:34,438 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:34,438 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:34,439 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:34,669 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:34,834 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:34,926 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:34,926 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:34,927 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:35,236 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:35,236 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:35,237 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:35,308 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:35,508 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:35,509 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:35,509 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:35,796 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:35,796 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:35,796 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:35,835 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:36,066 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:36,066 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:36,066 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:36,362 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:36,362 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:36,362 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:36,665 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:36,665 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:36,666 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:36,836 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:36,836 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:34:36,949 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:36,949 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:36,949 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:37,236 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:37,236 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:37,237 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:37,307 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:37,592 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:37,592 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:37,593 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:37,838 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:37,932 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:37,933 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:37,933 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:38,217 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:38,218 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:38,218 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:38,572 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:38,572 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:38,572 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:38,839 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:38,904 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:38,905 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:38,905 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:39,143 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:39,184 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:39,202 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:39,203 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:39,474 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:39,474 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:39,475 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:39,551 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:39,756 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:39,756 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:39,758 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:39,840 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:40,049 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:40,049 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:40,049 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:40,524 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:40,524 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:40,525 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:40,845 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:40,851 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:40,851 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:40,851 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:41,152 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:41,152 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:41,153 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:41,485 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:41,485 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:41,486 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:41,555 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:41,769 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:41,773 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:41,773 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:41,845 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:42,121 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:42,121 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:42,121 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:42,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:42,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:42,402 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:42,699 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:42,699 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:42,700 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:42,847 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:42,974 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:42,974 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:42,974 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:43,276 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:43,276 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:43,277 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:43,589 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:43,589 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:43,590 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:43,622 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:43,671 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:43,848 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:43,897 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:43,897 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:43,897 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:44,175 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:44,175 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:44,176 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:44,524 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:44,524 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:44,525 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:44,816 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:44,816 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:44,817 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:44,852 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:45,132 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:45,133 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:45,133 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:45,414 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:45,414 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:45,414 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:45,729 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:45,729 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:45,731 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:45,811 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:45,855 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:46,037 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:46,037 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:46,038 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:46,351 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:46,352 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:46,352 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:46,681 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:46,681 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:46,681 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:46,856 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:46,956 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:46,957 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:46,957 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:47,251 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:47,252 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:47,252 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:47,526 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:47,527 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:47,527 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:47,817 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:47,818 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:47,819 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:47,861 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:47,903 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:48,054 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:34:48,054 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:34:48,054 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:34:48,057 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:34:48,140 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:34:48,142 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:48,143 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:48,143 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:48,143 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:48,583 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:48,583 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:48,584 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:48,864 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:48,911 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:48,911 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:48,912 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:49,258 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:49,258 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:49,258 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:49,573 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:49,573 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:49,574 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:49,863 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:49,863 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:49,865 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:49,866 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:50,040 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:50,152 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:50,153 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:50,153 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:50,455 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:50,455 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:50,456 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:50,778 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:50,778 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:50,778 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:50,868 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:51,078 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:51,083 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:51,083 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:51,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:51,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:51,402 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:51,767 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:51,767 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:51,768 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:51,869 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:52,033 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:52,070 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:52,070 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:52,071 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:52,415 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:52,415 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:52,416 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:52,563 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:52,727 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:52,727 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:52,728 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:52,872 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:52,873 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:34:53,028 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:53,029 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:53,029 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:53,620 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:53,622 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:53,622 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:53,874 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:53,908 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:53,908 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:53,908 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:54,202 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:54,202 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:54,203 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:54,272 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:54,483 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:54,484 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:54,484 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:54,789 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:54,789 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:54,790 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:54,878 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:55,061 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:55,061 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:55,062 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:55,337 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:55,337 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:55,337 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:55,665 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:55,665 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:55,666 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:55,879 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:56,007 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:56,017 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:56,018 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:56,321 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:56,321 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:56,322 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:56,390 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:56,626 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:56,627 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:56,627 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:56,880 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:56,936 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:56,936 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:56,937 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:57,030 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:34:57,263 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:57,263 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:57,264 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:57,561 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:57,561 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:57,562 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:57,841 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:57,842 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:57,842 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:57,881 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:58,118 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:58,133 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:58,133 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:58,551 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:58,552 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:58,553 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:58,661 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:34:58,832 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:58,832 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:58,833 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:58,884 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:59,098 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:59,099 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:59,099 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:59,389 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:59,389 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:59,390 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:59,670 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:59,670 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:59,670 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:34:59,888 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:34:59,956 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:34:59,956 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:34:59,956 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:00,238 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:00,239 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:00,239 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:00,537 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:00,537 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:00,538 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:00,835 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:00,835 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:00,836 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:00,890 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:00,956 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:01,122 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:01,122 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:01,122 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:01,417 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:01,417 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:01,418 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:01,503 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:01,723 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:01,723 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:01,724 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:01,894 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:02,009 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:02,009 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:02,010 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:02,286 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:02,299 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:02,299 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:02,634 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:02,634 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:02,634 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:02,895 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:02,948 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:02,948 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:02,949 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:03,021 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:03,145 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:35:03,163 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:35:03,163 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:35:03,166 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:35:03,246 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:35:03,272 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:03,272 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:03,273 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:03,569 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:03,569 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:03,570 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:03,887 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:03,887 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:03,888 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:03,899 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:04,177 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:04,177 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:04,178 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:04,476 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:04,476 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:04,477 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:04,786 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:04,786 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:04,787 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:04,900 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:05,102 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:05,102 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:05,103 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:05,349 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:05,496 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:05,496 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:05,496 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:05,839 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:05,839 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:05,840 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:05,901 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:05,961 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:06,113 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:06,113 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:06,113 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:06,446 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:06,463 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:06,464 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:06,758 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:06,758 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:06,759 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:06,903 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:07,061 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:07,061 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:07,062 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:07,344 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:07,344 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:07,345 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:07,572 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:07,721 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:07,721 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:07,722 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:07,904 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:07,904 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:35:08,006 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:08,007 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:08,007 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:08,318 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:08,318 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:08,319 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:08,608 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:08,608 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:08,609 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:08,904 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:08,929 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:08,930 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:08,930 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:09,231 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:09,231 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:09,232 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:09,501 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:09,501 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:09,502 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:09,627 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:09,792 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:09,792 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:09,792 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:09,910 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:10,071 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:10,071 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:10,072 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:10,370 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:10,370 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:10,371 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:10,442 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:10,668 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:10,668 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:10,669 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:10,911 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:11,090 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:11,090 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:11,091 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:11,372 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:11,372 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:11,373 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:11,911 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:11,972 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:11,972 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:11,973 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:12,141 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:12,248 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:12,248 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:12,248 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:12,611 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:12,611 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:12,612 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:12,888 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:12,888 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:12,889 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:12,916 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:13,203 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:13,203 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:13,203 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:13,477 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:13,478 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:13,478 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:13,764 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:13,764 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:13,765 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:13,916 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:14,078 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:14,078 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:14,079 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:14,192 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:14,349 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:14,349 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:14,349 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:14,646 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:14,646 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:14,647 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:14,917 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:14,928 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:14,970 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:14,970 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:14,971 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:15,261 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:15,261 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:15,262 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:15,547 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:15,547 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:15,548 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:15,847 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:15,847 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:15,848 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:15,918 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:16,131 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:16,131 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:16,132 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:16,426 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:16,426 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:16,427 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:16,717 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:16,717 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:16,718 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:16,920 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:16,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:16,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:16,992 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:17,277 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:17,282 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:17,283 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:17,566 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:17,566 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:17,567 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:17,924 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:17,957 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:17,957 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:17,958 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:18,249 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:35:18,250 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:35:18,250 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:35:18,252 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:35:18,317 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:35:18,330 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:18,330 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:18,331 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:18,929 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:19,022 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:19,022 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:19,022 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:19,310 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:19,313 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:19,313 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:19,413 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:19,612 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:19,612 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:19,613 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:19,904 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:19,923 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:19,923 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:19,933 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:20,246 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:20,246 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:20,247 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:20,540 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:20,540 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:20,541 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:20,831 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:20,831 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:20,832 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:20,936 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:21,303 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:21,304 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:21,304 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:21,603 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:21,603 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:21,603 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:21,908 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:21,909 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:21,909 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:21,941 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:22,208 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:22,208 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:22,209 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:22,509 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:22,509 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:22,510 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:22,804 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:22,804 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:22,805 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:22,944 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:23,127 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:23,127 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:23,128 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:23,445 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:23,445 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:23,446 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:23,742 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:23,743 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:23,743 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:23,902 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:23,946 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:23,947 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:35:24,046 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:24,046 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:24,047 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:24,362 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:24,363 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:24,364 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:24,493 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:24,707 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:24,708 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:24,708 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:24,951 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:24,998 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:24,998 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:24,998 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:25,295 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:25,295 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:25,295 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:25,588 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:25,588 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:25,589 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:25,905 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:25,905 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:25,906 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:25,952 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:26,221 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:26,221 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:26,222 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:26,570 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:26,570 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:26,571 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:26,934 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:26,934 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:26,935 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:26,955 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:27,253 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:27,254 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:27,254 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:27,543 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:27,544 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:27,544 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:27,858 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:27,858 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:27,859 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:27,957 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:28,179 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:28,179 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:28,180 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:28,367 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:28,468 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:28,468 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:28,469 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:28,770 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:28,771 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:28,771 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:28,961 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:29,427 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:29,427 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:29,428 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:29,770 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:29,770 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:29,771 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:29,962 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:30,089 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:30,089 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:30,090 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:30,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:30,402 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:30,403 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:30,688 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:30,688 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:30,689 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:30,962 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:30,968 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:30,968 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:30,968 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:31,265 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:31,265 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:31,265 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:31,793 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:31,794 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:31,794 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:31,964 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:32,082 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:32,083 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:32,083 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:32,386 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:32,386 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:32,387 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:32,688 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:32,688 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:32,689 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:32,854 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:32,964 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:32,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:32,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:32,993 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:33,333 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:35:33,334 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:35:33,334 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:35:33,367 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:35:33,615 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:35:33,686 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:33,686 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:33,686 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:33,965 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:33,980 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:33,982 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:33,983 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:34,294 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:34,294 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:34,295 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:34,620 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:34,620 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:34,621 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:34,706 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:34,953 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:34,953 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:34,954 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:34,965 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:35,262 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:35,265 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:35,266 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:35,554 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:35,554 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:35,554 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:35,847 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:35,848 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:35,848 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:35,966 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:36,488 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:36,488 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:36,489 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:36,820 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:36,820 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:36,820 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:36,967 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:37,114 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:37,114 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:37,114 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:37,337 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:37,426 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:37,427 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:37,427 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:37,729 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:37,729 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:37,730 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:37,967 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:38,417 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:38,418 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:38,418 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:38,715 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:38,715 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:38,715 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:38,970 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:39,028 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:39,028 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:39,028 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:39,353 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:39,353 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:39,354 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:39,651 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:39,651 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:39,652 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:39,970 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:39,985 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:39,985 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:39,986 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:40,517 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:40,517 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:40,518 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:40,875 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:40,876 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:40,876 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:40,971 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:41,653 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:41,653 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:41,654 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:41,822 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:41,974 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:41,982 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:35:41,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:41,993 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:41,993 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:42,295 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:42,295 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:42,296 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:42,593 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:42,594 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:42,594 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:42,975 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:43,076 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:43,077 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:43,077 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:43,426 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:43,426 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:43,427 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:43,784 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:43,784 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:43,785 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:43,978 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:44,068 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:44,068 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:44,069 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:44,939 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:44,939 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:44,940 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:44,982 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:45,026 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:35:45,509 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:45,509 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:45,509 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:45,843 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:45,843 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:45,843 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:45,983 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:46,148 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:46,149 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:46,149 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:46,313 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:46,422 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:46,422 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:46,423 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:46,737 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:46,738 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:46,738 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:46,986 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:47,088 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:47,088 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:47,089 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:47,380 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:47,381 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:47,381 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:47,679 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:47,679 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:47,679 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:47,990 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:47,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:47,992 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:47,993 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:48,277 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:48,277 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:48,278 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:48,614 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:48,615 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:48,615 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:48,619 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: status
+2020-11-17 15:35:48,619 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:35:48,619 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: status
+2020-11-17 15:35:48,623 DEBUG   SenderThread:71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:35:48,683 DEBUG   SenderThread:71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:35:48,894 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:48,894 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:48,895 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:48,994 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:49,203 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:49,203 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:49,204 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:49,896 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:49,896 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:49,897 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:49,998 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:50,262 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:50,262 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:50,262 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:50,558 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:50,558 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:50,559 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:50,780 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:50,838 DEBUG   SenderThread:71821 [sender.py:send():90] send: history
+2020-11-17 15:35:50,838 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:35:50,838 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:35:50,947 WARNING MainThread:71821 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2020-11-17 15:35:51,002 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:35:51,225 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: pause
+2020-11-17 15:35:51,226 INFO    HandlerThread:71821 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-17 15:35:51,286 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:35:52,004 INFO    Thread-9  :71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:36:00,152 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: resume
+2020-11-17 15:36:00,152 INFO    HandlerThread:71821 [handler.py:handle_request_resume():221] starting system metrics thread
+2020-11-17 15:36:00,292 DEBUG   SenderThread:71821 [sender.py:send():90] send: exit
+2020-11-17 15:36:00,292 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-17 15:36:00,292 INFO    SenderThread:71821 [sender.py:send_exit():168] handling exit code: 0
+2020-11-17 15:36:00,293 INFO    SenderThread:71821 [sender.py:send_exit():176] send defer
+2020-11-17 15:36:00,293 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,293 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: poll_exit
+2020-11-17 15:36:00,293 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:00,293 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 0
+2020-11-17 15:36:00,293 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,293 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:00,293 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-11-17 15:36:00,293 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 1
+2020-11-17 15:36:00,294 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:00,294 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 1
+2020-11-17 15:36:00,362 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,363 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:00,363 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-11-17 15:36:00,363 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 2
+2020-11-17 15:36:00,363 DEBUG   SenderThread:71821 [sender.py:send():90] send: stats
+2020-11-17 15:36:00,363 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:00,363 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 2
+2020-11-17 15:36:00,364 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,364 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:00,364 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-11-17 15:36:00,364 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 3
+2020-11-17 15:36:00,364 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:00,364 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 3
+2020-11-17 15:36:00,365 DEBUG   SenderThread:71821 [sender.py:send():90] send: summary
+2020-11-17 15:36:00,365 INFO    SenderThread:71821 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-17 15:36:00,365 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,365 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:00,365 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-11-17 15:36:00,366 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 4
+2020-11-17 15:36:00,366 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:00,366 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 4
+2020-11-17 15:36:00,366 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:00,366 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:00,366 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-11-17 15:36:00,366 INFO    SenderThread:71821 [dir_watcher.py:finish():278] shutting down directory watcher
+2020-11-17 15:36:01,018 INFO    SenderThread:71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:36:01,018 INFO    SenderThread:71821 [dir_watcher.py:_on_file_modified():225] file/dir modified: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:36:01,019 INFO    SenderThread:71821 [dir_watcher.py:finish():308] scan: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files
+2020-11-17 15:36:01,019 INFO    SenderThread:71821 [dir_watcher.py:finish():314] scan save: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/requirements.txt requirements.txt
+2020-11-17 15:36:01,019 INFO    SenderThread:71821 [dir_watcher.py:finish():314] scan save: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log output.log
+2020-11-17 15:36:01,023 INFO    SenderThread:71821 [dir_watcher.py:finish():314] scan save: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/config.yaml config.yaml
+2020-11-17 15:36:01,028 INFO    SenderThread:71821 [dir_watcher.py:finish():314] scan save: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json wandb-summary.json
+2020-11-17 15:36:01,031 DEBUG   Thread-13 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:36:01,031 INFO    SenderThread:71821 [dir_watcher.py:finish():314] scan save: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-metadata.json wandb-metadata.json
+2020-11-17 15:36:01,032 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 5
+2020-11-17 15:36:01,032 DEBUG   Thread-14 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:36:01,033 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:01,033 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 5
+2020-11-17 15:36:01,033 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:01,033 DEBUG   Thread-15 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:36:01,033 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:01,036 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-11-17 15:36:01,036 INFO    SenderThread:71821 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-17 15:36:01,036 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 6
+2020-11-17 15:36:01,037 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:01,037 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 6
+2020-11-17 15:36:01,037 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:01,037 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:01,037 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-11-17 15:36:01,038 DEBUG   Thread-16 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-17 15:36:02,302 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-17 15:36:06,405 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:36:06,507 DEBUG   Thread-15 :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:36:06,509 DEBUG   Thread-16 :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:36:06,512 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:36:06,518 DEBUG   Thread-13 :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:36:06,529 DEBUG   Thread-14 :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-17 15:36:06,566 DEBUG   Thread-15 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-17 15:36:06,583 DEBUG   Thread-16 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-17 15:36:06,625 DEBUG   Thread-14 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-17 15:36:06,625 DEBUG   Thread-13 :71821 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-17 15:36:06,664 DEBUG   Thread-5  :71821 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/davinan/snapnsnack/3fd8bez1/file_stream HTTP/1.1" 200 None
+2020-11-17 15:36:06,672 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 7
+2020-11-17 15:36:06,672 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:06,672 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: poll_exit
+2020-11-17 15:36:06,672 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:06,673 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 7
+2020-11-17 15:36:06,673 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:06,673 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:06,673 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-11-17 15:36:06,673 INFO    SenderThread:71821 [sender.py:send_request_defer():221] send defer: 8
+2020-11-17 15:36:06,673 DEBUG   SenderThread:71821 [sender.py:send():90] send: final
+2020-11-17 15:36:06,673 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: defer
+2020-11-17 15:36:06,673 DEBUG   SenderThread:71821 [sender.py:send():90] send: footer
+2020-11-17 15:36:06,674 INFO    HandlerThread:71821 [handler.py:handle_request_defer():69] handle defer: 8
+2020-11-17 15:36:06,674 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:06,674 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: defer
+2020-11-17 15:36:06,674 INFO    SenderThread:71821 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-11-17 15:36:06,850 DEBUG   Thread-16 :71821 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/davinan/snapnsnack/3fd8bez1/wandb-summary.json?Expires=1605731766&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Ps9pl8L1Ocr0WS1oWLVhKJU%2FlJlxOPikH66ytFJT2eXSyzY6spZcOvwd35dZ8X4gvExwuj5z1qsyO0BygDGFvWG8lFo1wWaztTjWrEA%2F5qo%2B7jLwkLP5kYwW3T%2BUrqlSTkBzRzgOIOESa1%2F6vzewNZrkGrTdtpV%2Bkq2ZzAOxCX7P0kwELinSWeKY36aJP2B3JYJoM5volmGIUAuXQslx6qu88HHVlmd54sVcuRhrnRKH3TuqmDP%2FtXN%2FK%2B7WXaslFk2acjPzpLGILCCQFT4vvtHxPD7xQFw0TnYd5eh4aHqOsJUntVggk%2FvLEFSmVp5NtgAX6g4Zpng7CLNNoFdz1Q%3D%3D HTTP/1.1" 200 0
+2020-11-17 15:36:06,853 INFO    Thread-16 :71821 [upload_job.py:push():131] Uploaded file /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/wandb-summary.json
+2020-11-17 15:36:06,857 DEBUG   Thread-13 :71821 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/davinan/snapnsnack/3fd8bez1/requirements.txt?Expires=1605731766&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ikfV%2FAnGO0QUABbjV%2B264ii%2B2nXaOGUxcTnh3wiNmDDq1n6g077CWiN4QvhFsq3uerNrAc9nurFV6%2By3uaoMbz04xIw%2F2aKVKnfJygHzY1HeTqcCmbTAuZwanUtPU88MLru5BuSi87rgE28P52nx2KTtqVLyoCGrN4ceXT3t2XA1mq4zU%2FJPfFChyqPDtZEA0%2F%2FypUAgaG9J%2Be81%2F6nfgBG4QBGsMoc2bFfudL1gt3msunrmUJs8qFs5KdZzwBceWNjLqd0eRMun4xm6taYkZ%2FrQ3HHh2bETM8F4AjUYBNIXPFL5h2m9%2BEtQ8vPUbrf1KC8KQ352Jgp%2Fq%2BabXgVLzg%3D%3D HTTP/1.1" 200 0
+2020-11-17 15:36:06,860 INFO    Thread-13 :71821 [upload_job.py:push():131] Uploaded file /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/requirements.txt
+2020-11-17 15:36:06,861 DEBUG   Thread-15 :71821 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/davinan/snapnsnack/3fd8bez1/config.yaml?Expires=1605731766&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=UgQ7gyjWFsF2lSgvnf16htzgWSJhXXhw0RlGbTo0dvn7Uu62K7eWc6jLzUmQFv9EOL8H6jsUAKBb3s8M%2FvKhNmbS%2F9KUk%2BzrmH8ANgKO9hN%2BTicOaNS8%2F%2FPGGQtf3BJA0WfpSZghUiJTc5ktuT0b4XN3aqzx027UVXSCabRrASrlSn3CVaPRaSN1gBPP6EFWhOiLfx%2F1FyZSBdW9LZiJ1wKUmZsLxG6hqdBjetZBuWx5U1XmjTtp4r7z%2BYfR%2BrBrkXDp9sgn6gYKQv9j0l8zROJ%2B%2Fd2h7KDahw6ipF3SJ7wZxKDqJYcApizCzmzNJAFycpmYi5UYb4zTkRDBH6eJow%3D%3D HTTP/1.1" 200 0
+2020-11-17 15:36:06,863 INFO    Thread-15 :71821 [upload_job.py:push():131] Uploaded file /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/config.yaml
+2020-11-17 15:36:06,925 DEBUG   Thread-14 :71821 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/davinan/snapnsnack/3fd8bez1/output.log?Expires=1605731766&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=hE6K0ceN9iH4FKAWO3c2%2FUg4NMFATvRjTtvObmYkP%2B7sVmJildjdQaP4jw6v1n5sULC7mq8l6oanreqp5ifwo5oTB3LKet2phztRy%2B9x1ahKtedcb27eW6LNT%2FtMDBkZs4HYamsax17cyoVfBITYDLOPcif%2BSz%2BFC2v9vc7pXAJm6E0fSSj%2Bp7EJLsA%2FCzW5Tim%2Bhgsy4ZG9GbagXM10J6QQ5%2Fa4%2FZwKr7OEFIdfkkAuUt2Ek4iPtYmus5HMHa%2F9qcc5RhAEIB6XgPpqyF0J52L0AWRrOLnPdAbyNf1Jmlj%2FOwYwBhjb4%2F1SEu92vcL%2FhKAuAsb3c5r73TTA39mzLA%3D%3D HTTP/1.1" 200 0
+2020-11-17 15:36:06,928 INFO    Thread-14 :71821 [upload_job.py:push():131] Uploaded file /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/files/output.log
+2020-11-17 15:36:08,677 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-17 15:36:08,677 DEBUG   SenderThread:71821 [sender.py:send():90] send: request
+2020-11-17 15:36:08,677 DEBUG   SenderThread:71821 [sender.py:send_request():99] send_request: poll_exit
+2020-11-17 15:36:08,677 INFO    SenderThread:71821 [file_pusher.py:join():174] waiting for file pusher
+2020-11-17 15:36:08,679 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: get_summary
+2020-11-17 15:36:08,680 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: sampled_history
+2020-11-17 15:36:08,681 DEBUG   HandlerThread:71821 [handler.py:handle_request():55] handle_request: shutdown
+2020-11-17 15:36:08,681 INFO    HandlerThread:71821 [handler.py:finish():271] shutting down handler
+2020-11-17 15:36:09,682 INFO    SenderThread:71821 [sender.py:finish():630] shutting down sender
+2020-11-17 15:36:09,683 INFO    WriterThread:71821 [datastore.py:close():257] close: /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_153413-3fd8bez1/run-3fd8bez1.wandb
+2020-11-17 15:36:09,683 INFO    SenderThread:71821 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-17 15:36:09,683 INFO    SenderThread:71821 [file_pusher.py:join():174] waiting for file pusher
+2020-11-17 15:36:09,685 INFO    MainThread:71821 [internal.py:handle_exit():138] Internal process exited

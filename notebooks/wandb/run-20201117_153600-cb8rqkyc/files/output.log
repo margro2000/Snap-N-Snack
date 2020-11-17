@@ -1,0 +1,20 @@
+
+  | Name     | Type   | Params
+------------------------------------
+0 | backbone | ResNet | 11 M  
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 49 < 50; dropping {'train_loss': 139666.90625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 99 < 100; dropping {'train_loss': 2312.213623046875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 149 < 150; dropping {'train_loss': 375753.78125, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 199 < 200; dropping {'train_loss': 31785.90234375, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 249 < 250; dropping {'train_loss': 38875.44921875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 299 < 300; dropping {'train_loss': 59047.0, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 349 < 350; dropping {'train_loss': 22711.22265625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 399 < 400; dropping {'train_loss': 60634.44921875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 449 < 450; dropping {'train_loss': 73807.34375, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 499 < 500; dropping {'train_loss': 231170.96875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 549 < 550; dropping {'train_loss': 157006.28125, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 599 < 600; dropping {'train_loss': 81450.0546875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 649 < 650; dropping {'train_loss': 73073.9453125, 'epoch': 0}.
+
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores

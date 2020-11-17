@@ -1,0 +1,6 @@
+
+  | Name     | Type   | Params
+------------------------------------
+0 | backbone | ResNet | 11 M  
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores

@@ -1,0 +1,62 @@
+
+  | Name     | Type   | Params
+------------------------------------
+0 | backbone | ResNet | 11 M  
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 49 < 50; dropping {'train_loss': 216.3025665283203, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 99 < 100; dropping {'train_loss': 41.74549102783203, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 149 < 150; dropping {'train_loss': 472.64166259765625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 199 < 200; dropping {'train_loss': 27.966970443725586, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 249 < 250; dropping {'train_loss': 191.43173217773438, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 299 < 300; dropping {'train_loss': 140.13015747070312, 'epoch': 0}.
+Exception ignored in: <bound method tqdm.__del__ of Epoch 0:   0%|<bar/>| 0/7280 [04:14<?, ?it/s]>
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/tqdm/std.py", line 1122, in __del__
+    self.close()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/tqdm/notebook.py", line 257, in close
+    super(tqdm_notebook, self).close(*args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/tqdm/std.py", line 1323, in close
+    fp_write('')
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/tqdm/std.py", line 1320, in fp_write
+    self.fp.write(_unicode(s))
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/tqdm/utils.py", line 223, in inner
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/lib/redirect.py", line 91, in new_write
+    cb(name, data)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 598, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 146, in publish_output
+    self._publish_output(o)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 151, in _publish_output
+    self._publish(rec)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 432, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 349 < 350; dropping {'train_loss': 88.15325164794922, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 399 < 400; dropping {'train_loss': 85.4764404296875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 449 < 450; dropping {'train_loss': 52.043296813964844, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 499 < 500; dropping {'train_loss': 107.010009765625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 549 < 550; dropping {'train_loss': 124.7865982055664, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 599 < 600; dropping {'train_loss': 74.19902801513672, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 649 < 650; dropping {'train_loss': 4.416938304901123, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 699 < 700; dropping {'train_loss': 79.21692657470703, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 749 < 750; dropping {'train_loss': 54.60957717895508, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 799 < 800; dropping {'train_loss': 64.95272827148438, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 849 < 850; dropping {'train_loss': 41.85011291503906, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 899 < 900; dropping {'train_loss': 320.09771728515625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 949 < 950; dropping {'train_loss': 262.8679504394531, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 999 < 1000; dropping {'train_loss': 525.4197998046875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1049 < 1050; dropping {'train_loss': 192.56399536132812, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1099 < 1100; dropping {'train_loss': 71.63819885253906, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1149 < 1150; dropping {'train_loss': 25.212303161621094, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1199 < 1200; dropping {'train_loss': 135.085205078125, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1249 < 1250; dropping {'train_loss': 54.76313400268555, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1299 < 1300; dropping {'train_loss': 112.77437591552734, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1349 < 1350; dropping {'train_loss': 44.14701461791992, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1399 < 1400; dropping {'train_loss': 71.98936462402344, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1449 < 1450; dropping {'train_loss': 36.10141372680664, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1499 < 1500; dropping {'train_loss': 108.74908447265625, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1549 < 1550; dropping {'train_loss': 333.39202880859375, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1599 < 1600; dropping {'train_loss': 82.7861099243164, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1649 < 1650; dropping {'train_loss': 72.6522445678711, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1699 < 1700; dropping {'train_loss': 249.32266235351562, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 1749 < 1750; dropping {'train_loss': 2525.417236328125, 'epoch': 0}.

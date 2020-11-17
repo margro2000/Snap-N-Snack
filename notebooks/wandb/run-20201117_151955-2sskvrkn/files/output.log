@@ -1,0 +1,33 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+
+  | Name     | Type   | Params
+------------------------------------
+0 | backbone | ResNet | 11 M  
+loss: 	159344.90625
+loss: 	2208.8662109375
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+loss: 	nan
+

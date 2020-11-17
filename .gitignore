@@ -1,1 +1,9 @@
 data/*
+notebooks/.ipynb_checkpoints
+models/__pycache__/
+datasets/__pycache__/
+.DS_Store
+.idea
+notebooks/lightning_logs
+notebooks/snapnsnack
+

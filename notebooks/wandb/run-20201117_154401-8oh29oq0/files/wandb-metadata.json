@@ -1,0 +1,24 @@
+{
+    "os": "Darwin-20.1.0-x86_64-i386-64bit",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-11-17T20:44:06.063444",
+    "startedAt": "2020-11-17T20:44:01.680299",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/davinan/Library/Jupyter/runtime/kernel-ce160584-50c7-4bc6-b8f1-76a6b2ca4001.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/margro2000/Snap-N-Snack.git",
+        "commit": "fbbf6748fdd9913f646c2d15279d0b89143d2990"
+    },
+    "email": "davi.nakajima.an@gmail.com",
+    "root": "/Users/davinan/Dropbox/github/Snap-N-Snack",
+    "host": "davi",
+    "username": "davian",
+    "executable": "/opt/anaconda3/envs/py36/bin/python"
+}

@@ -1,0 +1,54 @@
+2020-11-17 15:42:26,943 INFO    MainThread:71610 [wandb_setup.py:_flush():68] setting env: {}
+2020-11-17 15:42:26,944 INFO    MainThread:71610 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2020-11-17 15:42:26,944 INFO    MainThread:71610 [wandb_setup.py:_flush():68] setting login settings: {}
+2020-11-17 15:42:26,944 INFO    MainThread:71610 [wandb_setup.py:_flush():68] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa81b61e5f8>
+2020-11-17 15:42:26,944 INFO    MainThread:71610 [wandb_init.py:_log_setup():302] Logging user logs to /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_154226-2hyujl41/logs/debug.log
+2020-11-17 15:42:26,944 INFO    MainThread:71610 [wandb_init.py:_log_setup():303] Logging internal logs to /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_154226-2hyujl41/logs/debug-internal.log
+2020-11-17 15:42:26,945 INFO    MainThread:71610 [wandb_run.py:finish():910] finishing run davinan/snapnsnack/3tm65hq8
+2020-11-17 15:42:26,945 INFO    MainThread:71610 [wandb_init.py:_jupyter_teardown():233] cleaning up jupyter logic
+2020-11-17 15:42:26,946 INFO    MainThread:71610 [jupyter.py:save_history():204] not saving jupyter history
+2020-11-17 15:42:26,946 INFO    MainThread:71610 [wandb_run.py:_atexit_cleanup():1186] got exitcode: 0
+2020-11-17 15:42:26,946 INFO    MainThread:71610 [wandb_run.py:_restore():1158] restore
+2020-11-17 15:42:26,948 INFO    MainThread:71610 [wandb_run.py:_wait_for_finish():1300] got exit ret: uuid: "7e7aa38e0be4439fa3f0d93ee0cc74b5"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 782
+      total_bytes: 782
+    }
+  }
+}
+
+2020-11-17 15:42:28,955 INFO    MainThread:71610 [wandb_run.py:_wait_for_finish():1300] got exit ret: uuid: "d2b6733e321a46b1a93e394b6848c0ff"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4204
+      total_bytes: 4204
+    }
+  }
+}
+
+2020-11-17 15:42:30,021 INFO    MainThread:71610 [wandb_run.py:_show_files():1509] logging synced files
+2020-11-17 15:42:31,059 INFO    MainThread:71610 [wandb_run.py:_console_start():1213] atexit reg
+2020-11-17 15:42:31,060 INFO    MainThread:71610 [wandb_run.py:_redirect():1083] redirect: SettingsConsole.WRAP
+2020-11-17 15:42:31,060 INFO    MainThread:71610 [wandb_run.py:_redirect():1114] Wrapping output streams.
+2020-11-17 15:42:31,060 INFO    MainThread:71610 [wandb_run.py:_redirect():1130] Redirects installed.
+2020-11-17 15:42:31,060 INFO    MainThread:71610 [wandb_run.py:_config_callback():545] config_cb None None {'_wandb': {'cli_version': '0.10.10', 'python_version': '3.6.12', 'is_jupyter_run': True, 'is_kaggle_kernel': False, 'framework': 'torch'}}
+2020-11-17 15:44:01,680 INFO    MainThread:71610 [wandb_init.py:_jupyter_setup():254] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa7e973eeb8>
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_setup.py:_flush():68] setting env: {}
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_setup.py:_flush():68] setting login settings: {}
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_setup.py:_flush():68] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa81b61e5f8>
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_init.py:_log_setup():302] Logging user logs to /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_154401-8oh29oq0/logs/debug.log
+2020-11-17 15:44:01,683 INFO    MainThread:71610 [wandb_init.py:_log_setup():303] Logging internal logs to /Users/davinan/Dropbox/github/Snap-N-Snack/notebooks/wandb/run-20201117_154401-8oh29oq0/logs/debug-internal.log
+2020-11-17 15:44:01,684 INFO    MainThread:71610 [wandb_run.py:finish():910] finishing run davinan/snapnsnack/2hyujl41

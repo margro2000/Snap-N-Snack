@@ -1,0 +1,13 @@
+
+  | Name     | Type    | Params
+-------------------------------------
+0 | backbone | ResNet  | 11 M  
+1 | softmax  | Softmax | 0     
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 49 < 50; dropping {'train_loss': 156213.03125, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 99 < 100; dropping {'train_loss': 9912.9326171875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 149 < 150; dropping {'train_loss': 717196.875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 199 < 200; dropping {'train_loss': 24112.01171875, 'epoch': 0}.
+[34m[1mwandb[0m: [33mWARNING[0m Step must only increase in log calls.  Step 249 < 250; dropping {'train_loss': 223007.046875, 'epoch': 0}.
+
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores

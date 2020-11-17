@@ -1,0 +1,13 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+/opt/anaconda3/envs/py36/lib/python3.6/site-packages/pytorch_lightning/utilities/distributed.py:45: UserWarning: you passed in a val_dataloader but have no validation_step. Skipping validation loop
+  warnings.warn(*args, **kwargs)
+
+  | Name     | Type   | Params
+------------------------------------
+0 | backbone | ResNet | 11 M  
+/opt/anaconda3/envs/py36/lib/python3.6/site-packages/pytorch_lightning/utilities/distributed.py:45: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 16 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+/opt/anaconda3/envs/py36/lib/python3.6/site-packages/pytorch_lightning/utilities/distributed.py:45: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  warnings.warn(*args, **kwargs)
+
