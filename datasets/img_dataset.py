@@ -21,6 +21,7 @@ class FoodImgs(Dataset):
         self.imgs_paths = self.get_imgs_path(imgs_path)
         self.transform = T.Compose(
             [
+                T.ToPILImage(),
                 T.Resize(256),
                 T.CenterCrop(224),
                 T.ToTensor(),
