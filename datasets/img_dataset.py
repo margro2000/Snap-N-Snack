@@ -16,20 +16,23 @@ class FoodImgs(Dataset):
             self,
             imgs_path="../data/snapnsnackdb/simple_images",
             target_dict="../data/snapnsnackdb/targets_dict.pkl",
+            transforms=None,
     ):
         self.targets_dict = pkl.load(open(target_dict, "rb"))
         self.imgs_paths = self.get_imgs_path(imgs_path)
-        self.transform = T.Compose(
-            [
-                T.ToPILImage(),
-                T.Resize(256),
-                T.CenterCrop(224),
-                T.ToTensor(),
-                T.Normalize(
-                    mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
-                ),
-            ]
-        )
+        if transforms is None:
+            self.transform = T.Compose(
+                [
+                    T.ToTensor(),
+                    T.Resize(256),
+                    T.CenterCrop(224),
+                    T.Normalize(
+                        mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
+                    ),
+                ]
+            )
+        else:
+            self.transform = transforms
 
     def __getitem__(self, idx, with_vis=False):
         im_label, im_path = self.imgs_paths[idx]
