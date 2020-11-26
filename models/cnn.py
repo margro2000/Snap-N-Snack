@@ -14,10 +14,10 @@ class SnapSnack(pl.LightningModule):
         prev = 512
         for dim in fc_layers:
             layers.append(torch.nn.Linear(in_features = prev, out_features=dim))
-            layers.append(torch.nn.ReLU())
+            layers.append(torch.nn.SoftMax())
             prev = dim
         layers.append(torch.nn.Linear(in_features=prev, out_features=output_dim))
-        self.softmax = torch.nn.ReLU()
+        self.softmax = torch.nn.Tanh()
 
         self.backbone.fc = torch.nn.Sequential(*layers)
         self.loss = torch.nn.SmoothL1Loss

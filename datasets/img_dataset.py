@@ -34,27 +34,24 @@ class FoodImgs(Dataset):
         else:
             self.transform = transforms
 
+        self.target_mean = torch.tensor([6350.682993, 100.324571, 346.986826, 6252.742310])
+        self.target_std = torch.tensor([359848.417868, 3843.462312, 20459.329549, 334042.078448])
+
     def __getitem__(self, idx, with_vis=False):
         im_label, im_path = self.imgs_paths[idx]
-        # img = plt.imread(im_path)
         img_pil = Image.open(im_path).convert("RGB")
-        # if len(img.shape) < 3 or img.shape[2] < 3:
-        #     img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
-        #     print(img.shape)
-        # if len(img.shape) == 4:
-        #     img = np.asarray(Image.open(im_path).convert("RGB"))
-        #     print(img.shape)
-        # img = img.asarray
 
         if with_vis:
             print(im_path)
             plt.imshow(img_pil)
             plt.show()
-        # img = self.transform(Image.fromarray(img))
-        img = self.transform(img_pil)
 
-        target = self.targets_dict[im_label][1:]
+        img = self.transform(img_pil)
+        target = self.normalize_target(self.targets_dict[im_label][1:])
         return img, target
+
+    def normalize_target(self, target):
+        return (target - self.target_mean) / self.target_std
 
     def inv_transform(self, img):
         topil = T.ToPILImage()
@@ -83,10 +80,15 @@ class FoodImgs(Dataset):
 
         return imgs_paths
 
+
 class UnNormalize(object):
-    def __init__(self, mean, std):
-        self.mean = mean
-        self.std = std
+    def __init__(
+            self,
+            mean=(6350.682993, 100.324571, 346.986826, 6252.742310),
+            std=(359848.417868, 3843.462312, 20459.329549, 334042.078448),
+    ):
+        self.mean = torch.tensor(mean)
+        self.std = torch.tensor(std)
 
     def __call__(self, tensor):
         """
