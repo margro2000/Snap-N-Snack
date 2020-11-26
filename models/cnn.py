@@ -51,6 +51,10 @@ class SnapSnack(pl.LightningModule):
             targets[:, 3].view(-1).cpu().detach().numpy(),
             preds[:, 3].view(-1).cpu().detach().numpy()
         )
+        r2_overall = r2_score(
+            targets.cpu().detach().numpy(),
+            preds.cpu().detach().numpy(),
+        )
 
         self.log('train_loss', loss)
         wandb.log(dict(
@@ -60,6 +64,7 @@ class SnapSnack(pl.LightningModule):
             r2_proteins=r2_proteins,
             r2_fat=r2_fat,
             r2_sodium=r2_sodium,
+            r2_overall=r2_overall,
 
         ))
         return loss
