@@ -32,10 +32,10 @@ class SnapSnack(pl.LightningModule):
         imgs, targets = batch
         preds = self.forward(imgs)
         loss = F.smooth_l1_loss(preds, targets)
-        r2 = r2_score(
-            torch.reshape(targets, (-1,)).detach().cpu().numpy(),
-            torch.reshape(preds, (-1,)).detach().cpu().numpy(),
-        )
+        preds = torch.reshape(preds, (-1,))
+        targets = torch.reshape(targets, (-1,))
+
+        r2 = r2_score(targets.cpu().numpy(), preds.cpu().numpy())
 
         self.log('train_loss', loss)
         wandb.log(dict(
