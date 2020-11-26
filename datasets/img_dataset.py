@@ -7,6 +7,7 @@ from torchvision import transforms as T
 from PIL import Image
 import matplotlib.pyplot as plt
 import cv2
+import numpy as np
 
 
 class FoodImgs(Dataset):
@@ -29,18 +30,26 @@ class FoodImgs(Dataset):
             ]
         )
 
-    def __getitem__(self, idx, with_vis = False):
+    def __getitem__(self, idx, with_vis=False):
         im_label, im_path = self.imgs_paths[idx]
-        img = plt.imread(im_path)
-        if len(img.shape) < 3 or img.shape[2] < 3:
-            img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+        # img = plt.imread(im_path)
+        img = Image.open(im_path).convert("RGB")
+        # if len(img.shape) < 3 or img.shape[2] < 3:
+        #     img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+        #     print(img.shape)
+        # if len(img.shape) == 4:
+        #     img = np.asarray(Image.open(im_path).convert("RGB"))
+        #     print(img.shape)
+        # img = img.asarray
 
         if with_vis:
             print(im_path)
             plt.imshow(img)
             plt.show()
-        img = self.transform(Image.fromarray(img))
-        target = self.targets_dict[im_label]
+        # img = self.transform(Image.fromarray(img))
+        img = self.transform(img)
+
+        target = self.targets_dict[im_label][1:]
         return img, target
 
     def inv_transform(self, img):
