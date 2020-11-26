@@ -33,7 +33,7 @@ class FoodImgs(Dataset):
     def __getitem__(self, idx, with_vis=False):
         im_label, im_path = self.imgs_paths[idx]
         # img = plt.imread(im_path)
-        img = Image.open(im_path).convert("RGB")
+        img_pil = Image.open(im_path).convert("RGB")
         # if len(img.shape) < 3 or img.shape[2] < 3:
         #     img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
         #     print(img.shape)
@@ -44,10 +44,10 @@ class FoodImgs(Dataset):
 
         if with_vis:
             print(im_path)
-            plt.imshow(img)
+            plt.imshow(img_pil)
             plt.show()
         # img = self.transform(Image.fromarray(img))
-        img = self.transform(img)
+        img = self.transform(img_pil)
 
         target = self.targets_dict[im_label][1:]
         return img, target
