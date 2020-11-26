@@ -10,7 +10,7 @@ import torch
 
 dataset = FoodImgs(
     imgs_path="../input/snapandsnack/snapnsnackdb/simple_images",
-    target_dict="../input/snapandsnack/snapnsnackdb/target_dict.pkl",
+    target_dict="../input/snapandsnack/snapnsnackdb/targets_dict.pkl",
 )
 
 s = len(dataset)
