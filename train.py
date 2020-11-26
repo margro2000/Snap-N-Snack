@@ -8,7 +8,10 @@ import wandb
 import os
 import torch
 
-dataset = FoodImgs()
+dataset = FoodImgs(
+    imgs_path="Snap-N-Snack/data/snapnsnackdb/simple_images",
+    target_dict="Snap-N-Snack/data/snapnsnackdb/target_dict.pkl",
+)
 
 s = len(dataset)
 print(f"{s} imgs")
