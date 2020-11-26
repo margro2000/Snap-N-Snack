@@ -3,6 +3,7 @@ import pytorch_lightning as pl
 from torchvision.models import resnet18, resnet50
 import torch.nn.functional as F
 import wandb
+from sklearn.metrics import r2_score
 
 class SnapSnack(pl.LightningModule):
 
@@ -31,14 +32,16 @@ class SnapSnack(pl.LightningModule):
         imgs, targets = batch
         preds = self.forward(imgs)
         loss = F.smooth_l1_loss(preds, targets)
+        r2 = r2_score(torch.reshape(targets, (-1,)).detach().numpy(), torch.reshape(preds, (-1,)).detach().numpy())
 
         self.log('train_loss', loss)
         wandb.log(dict(
             loss=loss.item(),
             batch_nb=batch_idx,
+            r2_score=r2,
         ))
         return loss
 
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=1e-7)
+        optimizer = torch.optim.Adam(self.parameters(), lr=1e-5)
         return optimizer
