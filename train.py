@@ -22,7 +22,7 @@ train_set, test_set = random_split(dataset, [train_size, test_size])
 
 wandb_logger = WandbLogger(project='snapnsnack')
 model = SnapSnack()
-trainer = pl.Trainer(logger=wandb_logger)
+trainer = pl.Trainer(logger=wandb_logger, gpus=1)
 trainer.fit(model, DataLoader(train_set, batch_size=256), DataLoader(test_set))
 torch.save(model.state_dict(), os.path.join(wandb.run.dir, "model.pt"))
 wandb.save(os.path.join(wandb.run.dir, "model.pt"))

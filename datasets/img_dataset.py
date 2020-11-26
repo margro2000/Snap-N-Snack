@@ -21,12 +21,12 @@ class FoodImgs(Dataset):
         self.imgs_paths = self.get_imgs_path(imgs_path)
         self.transform = T.Compose(
             [
+                T.Resize(256),
+                T.CenterCrop(224),
                 T.ToTensor(),
                 T.Normalize(
                     mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
                 ),
-                T.Resize(256),
-                T.CenterCrop(224),
             ]
         )
 
