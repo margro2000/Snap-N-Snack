@@ -35,13 +35,32 @@ class SnapSnack(pl.LightningModule):
         # preds = torch.reshape(preds.cpu(), (-1,))
         # targets = torch.reshape(targets.cpu(), (-1,))
 
-        r2 = r2_score(targets.view(-1).cpu().detach().numpy(), preds.view(-1).cpu().detach().numpy())
+        r2_calories = r2_score(
+            targets[:, 0].view(-1).cpu().detach().numpy(),
+            preds[:, 0].view(-1).cpu().detach().numpy()
+        )
+        r2_proteins = r2_score(
+            targets[:, 1].view(-1).cpu().detach().numpy(),
+            preds[:, 1].view(-1).cpu().detach().numpy()
+        )
+        r2_fat = r2_score(
+            targets[:, 2].view(-1).cpu().detach().numpy(),
+            preds[:, 2].view(-1).cpu().detach().numpy()
+        )
+        r2_sodium = r2_score(
+            targets[:, 3].view(-1).cpu().detach().numpy(),
+            preds[:, 3].view(-1).cpu().detach().numpy()
+        )
 
         self.log('train_loss', loss)
         wandb.log(dict(
             loss=loss.item(),
             batch_nb=batch_idx,
-            r2_score=r2,
+            r2_calories=r2_calories,
+            r2_proteins=r2_proteins,
+            r2_fat=r2_fat,
+            r2_sodium=r2_sodium,
+
         ))
         return loss
 
