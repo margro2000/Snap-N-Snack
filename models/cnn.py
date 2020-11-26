@@ -17,14 +17,14 @@ class SnapSnack(pl.LightningModule):
             layers.append(torch.nn.ReLU())
             prev = dim
         layers.append(torch.nn.Linear(in_features=prev, out_features=output_dim))
-        # self.softmax = torch.nn.Softmax(dim=1)
+        self.softmax = torch.nn.ReLU()
 
         self.backbone.fc = torch.nn.Sequential(*layers)
         self.loss = torch.nn.SmoothL1Loss
 
     def forward(self, x):
         x = self.backbone(x)
-        # x = self.softmax(x)
+        x = self.softmax(x)
         return x
 
     def training_step(self, batch, batch_idx):
@@ -32,7 +32,7 @@ class SnapSnack(pl.LightningModule):
         imgs, targets = batch
         preds = self.forward(imgs)
         loss = F.smooth_l1_loss(preds, targets)
-        r2 = r2_score(torch.reshape(targets, (-1,)).detach().numpy(), torch.reshape(preds, (-1,)).detach().numpy())
+        r2 = r2_score(torch.reshape(targets, (-1,)).cpu().detach().numpy(), torch.reshape(preds, (-1,)).cpu().detach().numpy())
 
         self.log('train_loss', loss)
         wandb.log(dict(
