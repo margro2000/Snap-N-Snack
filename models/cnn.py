@@ -31,7 +31,8 @@ class SnapSnack(pl.LightningModule):
         # training_step defined the train loop. It is independent of forward
         imgs, targets = batch
         preds = self.forward(imgs)
-        loss = F.smooth_l1_loss(preds, targets)
+        # loss = F.smooth_l1_loss(preds, targets)
+        loss = F.mse_loss(preds, targets)
         # preds = torch.reshape(preds.cpu(), (-1,))
         # targets = torch.reshape(targets.cpu(), (-1,))
 
