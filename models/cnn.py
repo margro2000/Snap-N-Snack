@@ -6,6 +6,7 @@ import wandb
 from sklearn.metrics import r2_score
 import numpy as np
 from ignite.contrib.metrics.regression import R2Score
+import os
 
 class SnapSnack(pl.LightningModule):
 
@@ -29,6 +30,7 @@ class SnapSnack(pl.LightningModule):
         self.lr = lr
         self.prev_preds = None
         self.weight_decay = weight_decay
+        self.epoch = 0
 
     def forward(self, x):
         x = self.backbone(x)
@@ -39,14 +41,6 @@ class SnapSnack(pl.LightningModule):
         imgs, targets = batch
         preds = self.forward(imgs)
         loss = F.mse_loss(preds, targets)
-        # if self.prev_preds is None:
-        #     self.prev_preds = preds
-        # else:
-        #     if torch.all(self.prev_preds == preds):
-        #         print(preds, targets)
-        #         print(preds[:, 0], targets[:, 0])
-        #         print("=======================")
-        #     self.prev_preds = preds
 
         r2_calories = r2_score(
             targets[:, 0].view(-1).cpu().detach().numpy(),
@@ -87,7 +81,11 @@ class SnapSnack(pl.LightningModule):
         fat = np.mean([x["r2_fat"] for x in outputs])
         sodium = np.mean([x["r2_sodium"] for x in outputs])
         overall = np.mean([x["r2_overall"] for x in outputs])
-        avg_loss = np.mean([x["loss"] for x in outputs])
+        torch.save(self.state_dict(), os.path.join(wandb.run.dir, f"model_{self.epoch}.pt"))
+        wandb.save(os.path.join(wandb.run.dir, f"model_{self.epoch}.pt"))
+        avg_loss = np.mean([x["loss"].item().numpy() for x in outputs])
+
+        self.epoch += 1
 
         wandb.log({
             "epoch_overall_r2" : overall,
@@ -95,6 +93,7 @@ class SnapSnack(pl.LightningModule):
             "epoch_protein_r2": protein,
             "epoch_fat_r2": fat,
             "epoch_sodium_r2": sodium,
+            "avg_loss": avg_loss,
         })
 
 
