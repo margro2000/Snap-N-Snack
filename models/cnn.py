@@ -83,7 +83,7 @@ class SnapSnack(pl.LightningModule):
         overall = np.mean([x["r2_overall"] for x in outputs])
         torch.save(self.state_dict(), os.path.join(wandb.run.dir, f"model_{self.epoch}.pt"))
         wandb.save(os.path.join(wandb.run.dir, f"model_{self.epoch}.pt"))
-        avg_loss = np.mean([x["loss"].item().numpy() for x in outputs])
+        avg_loss = np.mean([x["loss"].item() for x in outputs])
 
         self.epoch += 1
 
