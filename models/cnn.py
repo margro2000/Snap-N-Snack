@@ -39,14 +39,14 @@ class SnapSnack(pl.LightningModule):
         imgs, targets = batch
         preds = self.forward(imgs)
         loss = F.mse_loss(preds, targets)
-        if self.prev_preds is None:
-            self.prev_preds = preds
-        else:
-            if torch.all(self.prev_preds == preds):
-                print(preds, targets)
-                print(preds[:, 0], targets[:, 0])
-                print("=======================")
-            self.prev_preds = preds
+        # if self.prev_preds is None:
+        #     self.prev_preds = preds
+        # else:
+        #     if torch.all(self.prev_preds == preds):
+        #         print(preds, targets)
+        #         print(preds[:, 0], targets[:, 0])
+        #         print("=======================")
+        #     self.prev_preds = preds
 
         r2_calories = r2_score(
             targets[:, 0].view(-1).cpu().detach().numpy(),
