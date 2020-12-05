@@ -6,5 +6,7 @@ datasets/__pycache__/
 .idea
 notebooks/lightning_logs
 notebooks/snapnsnack
+notebooks/wandb
 */wandb/*
 notebooks/wandb/*
+*.pt
