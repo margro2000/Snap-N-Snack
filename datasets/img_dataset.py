@@ -48,6 +48,10 @@ class FoodImgs(Dataset):
 
         img = self.transform(img_pil)
         target = self.normalize_target(self.targets_dict[im_label][1:])
+        # target = self.targets_dict[im_label][1:]
+        # print(target)
+        # target = target / target.sum()
+
         return img, target
 
     def normalize_target(self, target):
@@ -91,13 +95,6 @@ class UnNormalize(object):
         self.std = torch.tensor(std)
 
     def __call__(self, tensor):
-        """
-        Args:
-            tensor (Tensor): Tensor image of size (C, H, W) to be normalized.
-        Returns:
-            Tensor: Normalized image.
-        """
-        for t, m, s in zip(tensor, self.mean, self.std):
-            t.mul_(s).add_(m)
-            # The normalize code -> t.sub_(m).div_(s)
+        tensor = tensor * self.std
+        tensor = tensor + self.mean
         return tensor

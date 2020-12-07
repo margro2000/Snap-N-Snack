@@ -23,9 +23,11 @@ class SnapSnack(pl.LightningModule):
             layers.append(torch.nn.Softmax())
             prev = dim
         layers.append(torch.nn.Linear(in_features=prev, out_features=output_dim))
-        self.softmax = torch.nn.Tanh()
+        # self.softmax = torch.nn.Tanh()
+        self.softmax = torch.nn.Softmax(dim=1)
         self.backbone.fc = torch.nn.Sequential(*layers)
-        self.loss = torch.nn.SmoothL1Loss
+        # self.loss = torch.nn.SmoothL1Loss
+        self.loss = torch.nn.KLDivLoss(reduction="batchmean")
 
         self.lr = lr
         self.prev_preds = None
@@ -34,33 +36,39 @@ class SnapSnack(pl.LightningModule):
 
     def forward(self, x):
         x = self.backbone(x)
-        # x = self.softmax(x)
+        x = self.softmax(x)
         return x
 
     def training_step(self, batch, batch_idx):
         imgs, targets = batch
         preds = self.forward(imgs)
-        loss = F.mse_loss(preds, targets)
+        # loss = F.mse_loss(preds, targets)
+        log_preds = torch.clamp(preds, 1e-7, preds.max().item()).log()
 
+        loss = self.loss(log_preds, targets)
+        print(preds)
+        print(targets)
+        print(loss.item())
+        print("================")
         r2_calories = r2_score(
+            preds[:, 0].view(-1).cpu().detach().numpy(),
             targets[:, 0].view(-1).cpu().detach().numpy(),
-            preds[:, 0].view(-1).cpu().detach().numpy()
         )
         r2_proteins = r2_score(
+            preds[:, 1].view(-1).cpu().detach().numpy(),
             targets[:, 1].view(-1).cpu().detach().numpy(),
-            preds[:, 1].view(-1).cpu().detach().numpy()
         )
         r2_fat = r2_score(
+            preds[:, 2].view(-1).cpu().detach().numpy(),
             targets[:, 2].view(-1).cpu().detach().numpy(),
-            preds[:, 2].view(-1).cpu().detach().numpy()
         )
         r2_sodium = r2_score(
+            preds[:, 3].view(-1).cpu().detach().numpy(),
             targets[:, 3].view(-1).cpu().detach().numpy(),
-            preds[:, 3].view(-1).cpu().detach().numpy()
         )
         r2_overall = r2_score(
-            targets.cpu().detach().numpy(),
             preds.cpu().detach().numpy(),
+            targets.cpu().detach().numpy(),
         )
         self.log('train_loss', loss)
         log_obj = dict(
