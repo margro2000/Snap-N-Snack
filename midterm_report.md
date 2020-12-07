@@ -155,13 +155,28 @@ After looking at our data seperately, we combined our Covid-19 and health data t
 
 ## Training our Models ##
 
+![Image](images/pyramid.png)
+
 **Stage 1: FineTuned ResNet18**
 
 **Plot 8** 
 ![](images/co_finetuned_res18.53.58 AM.png)
 
-**Plot 9** 
+**Image Dataset**
+
+Using: [Epicurious Recipes](https://www.kaggle.com/hugodarwood/epirecipes?select=epi_r.csv)
+
+Created: [SnapAndSnackDB](https://www.kaggle.com/davinakajimaan/snapandsnack)
+
+9000+ food images with Sodium, Calories, Fat, and Protein labels
+
+**Plot 9** - Training information for our finetuned ResNet 18 model
 ![](images/co_training_data.png)
+
+Average Testing MSE loss: 4.614897797697545e-05
+
+Kaggle notebook where we trained and tested the CNN model from Stage 1: https://www.kaggle.com/davinakajimaan/notebookaf19cac478 
+
 
 **Stage 2: Learning from Country-wise Nutrition Data**
 

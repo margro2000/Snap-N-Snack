@@ -178,15 +178,25 @@ This plot shows the Mortality rates for all the countries. We can see that the M
 
 **Stage 1: FineTuned ResNet18**
 
-**Plot 8**
+![Image](images/pyramid.png)
 
+**Plot 8** 
 ![](images/co_finetuned_res18.53.58 AM.png)
 
-**Plot 9**
+**Image Dataset**
 
+Using: [Epicurious Recipes](https://www.kaggle.com/hugodarwood/epirecipes?select=epi_r.csv)
+
+Created: [SnapAndSnackDB](https://www.kaggle.com/davinakajimaan/snapandsnack)
+
+9000+ food images with Sodium, Calories, Fat, and Protein labels
+
+**Plot 9** - Training information for our finetuned ResNet 18 model
 ![](images/co_training_data.png)
 
-**Plot 10**
+Average Testing MSE loss: 4.614897797697545e-05
+
+Kaggle notebook where we trained and tested the CNN model from Stage 1: https://www.kaggle.com/davinakajimaan/notebookaf19cac478 
 
 **Stage 2: Regression Models on Country-wise Nutrition Data**
 
@@ -268,3 +278,6 @@ Centers for Disease Control and Prevention. “National Health and Nutrition Exa
 
 “Recipe1M+: A Dataset for Learning Cross-Modal Embeddings for Cooking Recipes and Food Images.” MIT, pic2recipe.csail.mit.edu/.
 Ren, Maria. “COVID-19 Healthy Diet Dataset.” Kaggle, 22 Sept. 2020, www.kaggle.com/mariaren/covid19-healthy-diet-dataset?select=Food_Supply_Quantity_kg_Data.csv.
+
+
+He, Kaiming, et al. “Deep Residual Learning for Image Recognition.” ArXiv:1512.03385 [Cs], Dec. 2015. arXiv.org, http://arxiv.org/abs/1512.03385.
