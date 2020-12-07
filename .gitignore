@@ -1,0 +1,9 @@
+models/*.pt
+data/
+notebooks/.ipynb_checkpoints
+notebooks/lightning_logs
+notebooks/wandb
+notebooks/snapnsnack
+.DS_Store
+.idea
+
