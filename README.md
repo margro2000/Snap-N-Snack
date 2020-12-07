@@ -181,21 +181,26 @@ Dataset 2: 34 out of 46
 
 **Stage 3: Regression Model**
 
-**Plot 11** 
-![](/images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
+**Plot 11**
 
-**Plot 12** 
-![](/images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
+![](images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
 
-**Plot 13** 
-![](/images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
+**Plot 12**
 
-**Plot 14** 
-![](/images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
+![](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
+
+**Plot 13**
+
+![](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
+
+**Plot 14**
+
+![](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
 
 **Addendum**
 
-**Plot 15** 
+**Plot 15**
+
 ![](images/Screen Shot 2020-12-07 at 7.55.26 AM.png)
 
 Utilized Google Cloud's AutoML to increase labeling accuracy.
