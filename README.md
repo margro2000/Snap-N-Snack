@@ -158,27 +158,27 @@ After looking at our data seperately, we combined our Covid-19 and health data t
 
 **Stage 1: FineTuned ResNet18**
 
-**Plot 8** [](images/co_finetuned_res18.53.58 AM.png)
+**Plot 8** ![](images/co_finetuned_res18.53.58 AM.png)
 
-**Plot 9** [](images/co_training_data.png)
+**Plot 9** ![](images/co_training_data.png)
 
 **Stage 2: Learning from Country-wise Nutrition Data**
 
-**Plot 10** [](images/co_learn_by_country.png)
+**Plot 10** ![](images/co_learn_by_country.png)
 
 **Stage 3: Regression Model**
 
-**Plot 11** [](images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
+**Plot 11** ![](images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
 
-**Plot 12** [](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
+**Plot 12** ![](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
 
-**Plot 13** [](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
+**Plot 13** ![](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
 
-**Plot 14** [](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
+**Plot 14** ![](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
 
 **Addendum**
 
-**Plot 15** [](images/Screen Shot 2020-12-07 at 7.55.26 AM.png)
+**Plot 15** ![](images/Screen Shot 2020-12-07 at 7.55.26 AM.png)
 
 Utilized Google Cloud's AutoML to increase labeling accuracy.
 
