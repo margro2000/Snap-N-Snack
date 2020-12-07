@@ -153,8 +153,12 @@ After looking at our data seperately, we combined our Covid-19 and health data t
 **Plot 6** 
 ![](images/Correlation_nutrition_mortality.png)
 
+This plot shows a Correlation matrix between our features and label. As we can see from the correlation plots, there is a linear trend in the plots. This shows that we could train a regression model on our data.
+
 **Plot 7** 
 ![](images/co_mortality.png)
+
+This plot shows the Mortality rates for all the countries. We can see that the Mortality rate for Yemen is very high. This could mean that we there might be other reasons, other than COVID-19, that are responsible for the high Mortality rate. So this is an outlier for us and we remove it from our data.
 
 ## Training our Models ##
 
