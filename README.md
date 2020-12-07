@@ -171,6 +171,14 @@ After looking at our data seperately, we combined our Covid-19 and health data t
 **Plot 10** 
 ![](images/co_learn_by_country.png)
 
+Dimensionality Reduction
+
+After conducting the PCA and graphing the recovered variance versus the number of components for each dataset, we decided to keep the number of components which recover 99% of the variance. We then restructured our data to only incorporate these particular components which we will then use for future analyses. The number of components retained are as follows:
+
+Dataset 1: 22 out of 26
+
+Dataset 2: 34 out of 46
+
 **Stage 3: Regression Model**
 
 **Plot 11** 
@@ -194,13 +202,11 @@ Utilized Google Cloud's AutoML to increase labeling accuracy.
 
 ## Data Analysis and Conclusions ##
 
-Dimensionality Reduction
+One of the most important aspects of our project was breaking up the project into stages. Initially, we aimed to create two different stages working with the health and Covid-19 data seperately and then bringing the results together. However, bringing the data together would take more time than expected and will need to be addded into the next steps portion of our project. 
 
-After conducting the PCA and graphing the recovered variance versus the number of components for each dataset, we decided to keep the number of components which recover 99% of the variance. We then restructured our data to only incorporate these particular components which we will then use for future analyses. The number of components retained are as follows:
+Overall, our results were a mixture of predictable and surprising. This was because mortality.. 
 
-Dataset 1: 22 out of 26
-
-Dataset 2: 34 out of 46
+Lastly, we took a major takeaway from this project that while there was plenty of data available, it was not always in the format we needed and required cleaning, exploring, and lots of work to make it usable for the end goal of our project.
 
 **Next Steps**
 
