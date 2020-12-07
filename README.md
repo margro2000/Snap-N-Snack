@@ -27,6 +27,10 @@ This dataset has fat quantity, energy intake (kcal), food supply quantity (kg), 
 
 Different food group supply quantities, nutrition values, obesity, and undernourished percentages are obtained from Food and Agriculture Organization of the United Nations FAO website.
 
+The dataset is spread over 4 different files, one file for each nutrient type as shown below.
+
+![](images/covid19-dataset.png)
+
 **Step 1: Data Cleaning**
 
 **Cleaning Dataset 1 with Normalization:** Removing unnecessary columns and data normalization and scaling -
@@ -146,16 +150,26 @@ The examination information of the people in the dataset (only including blood p
 
 In this plot we color each of the data points in the projection for the Nutritional Information Data to the first two components with its associated BMI rating of being overweight (blue), normal weight (green), or underweight (red). Here we can see that the majority of the people in the study are overweight according to their recorded BMI&#39;s, but we also see that in the first two principal components, the people who are overweight, underweight, and normal weight cannot be linearly separated. This gives us some intuition to the complexity that our model for predicting health information from a person&#39;s diet must be in order to give accurate results.
 
+**Dimensionality Reduction Results**
+
+After conducting the PCA and graphing the recovered variance versus the number of components for each dataset, we decided to keep the number of components which recover 99% of the variance. We then restructured our data to only incorporate these particular components which we will then use for future analyses. The number of components retained are as follows:
+
+Dataset 1: 22 out of 26
+
+Dataset 2: 34 out of 46
+
 **Combining Data**
 
 After looking at our data seperately, we combined our Covid-19 and health data to better understand the correlations between nutrition and health data.
 
-**Plot 6** 
+**Plot 6**
+
 ![](images/Correlation_nutrition_mortality.png)
 
 This plot shows a Correlation matrix between our features and label. As we can see from the correlation plots, there is a linear trend in the plots. This shows that we could train a regression model on our data.
 
-**Plot 7** 
+**Plot 7**
+
 ![](images/co_mortality.png)
 
 This plot shows the Mortality rates for all the countries. We can see that the Mortality rate for Yemen is very high. This could mean that we there might be other reasons, other than COVID-19, that are responsible for the high Mortality rate. So this is an outlier for us and we remove it from our data.
@@ -164,26 +178,33 @@ This plot shows the Mortality rates for all the countries. We can see that the M
 
 **Stage 1: FineTuned ResNet18**
 
-**Plot 8** 
+**Plot 8**
+
 ![](images/co_finetuned_res18.53.58 AM.png)
 
-**Plot 9** 
+**Plot 9**
+
 ![](images/co_training_data.png)
 
-**Stage 2: Learning from Country-wise Nutrition Data**
+**Plot 10**
 
-**Plot 10** 
+**Stage 2: Regression Models on Country-wise Nutrition Data**
+
+Before we applied our regression models, we consolidated the 4 different nutrient datasets, into features in the following way. 
+
+The datasets are divided into two food categories - Animal-based products and Vegetal-based products.
+We got a weight for both categories from the kg dataset, and used it to get the relative intakes for each of the nutrient types. 
+
 ![](images/co_learn_by_country.png)
 
-Dimensionality Reduction
 
-After conducting the PCA and graphing the recovered variance versus the number of components for each dataset, we decided to keep the number of components which recover 99% of the variance. We then restructured our data to only incorporate these particular components which we will then use for future analyses. The number of components retained are as follows:
+We trained 4 different regression models on our dataset.
+- Ridge Regressor
+- Support Vector Regressor
+- Random Forest Regressor
+- XGBoost Regressor
 
-Dataset 1: 22 out of 26
-
-Dataset 2: 34 out of 46
-
-**Stage 3: Regression Model**
+XGBoost was the best performing model. The results can be seen in Plot 11.
 
 **Plot 11**
 
@@ -191,13 +212,11 @@ Dataset 2: 34 out of 46
 
 **Plot 12**
 
+Here we can see the plots of our model's Mortality prediction against the Ground Truth.
+
 ![](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
 
-**Plot 13**
-
 ![](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
-
-**Plot 14**
 
 ![](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
 
@@ -213,13 +232,28 @@ Utilized Google Cloud's AutoML to increase labeling accuracy.
 
 One of the most important aspects of our project was breaking up the project into stages. Initially, we aimed to create two different stages working with the health and Covid-19 data seperately and then bringing the results together. However, bringing the data together would take more time than expected and will need to be addded into the next steps portion of our project. 
 
-Overall, our results were a mixture of predictable and surprising. While we expected that factors like obesity, high blood pressure, and others would likely be linked to a high mortality rate, it was surprising how important these sort of factors were for predicting outcomes.
+Overall, our results were a mixture of predictable and surprising. This was because mortality.. 
 
 Lastly, we took a major takeaway from this project that while there was plenty of data available, it was not always in the format we needed and required cleaning, exploring, and lots of work to make it usable for the end goal of our project.
 
-## Next Steps ##
+**Next Steps**
 
-For our next steps, we want to increase the accuracy of our training model by adding more data and labeling to food images and Covid-19 health outcomes, Next, we want to continue to train with tools that can handle larger sets of data in the cloud. Furthermore, in the long-term, we want to build a front-end so that users can interact with our models. Lastly, as previously mentioned, we want to take the final step of linking our two stages to provide more relevant insights.
+Further Unsupervised Learning:
+
+For our COVID-19 Dataset, we have 4 sub-datasets. Each sub-dataset focuses on Fat Supply Quantity, KCal Data, Food Supply Quantity in kgs, and Protein Supply Quantity. In each sub-dataset the columns refer to the food type and each row refers to the country. So for example, the value which corresponds to the Animal Products column and the Thailand row of the Protein Supply Quantity sub-dataset, gives us the value of the Protein Supply gotten from Animal Products in Thailand.
+
+All of these datasets also have the last 5 columns which are constant and contain information about the COVID-19 numbers in that country. We separate these columns as they are labels.
+
+As of now, we have conducted our unsupervised learning on each sub-dataset separately. However, based on feedback which we were not able to incorporate for the midterm report, our next step is to merge all 4 sub-datasets and conduct unsupervised learning to compare it to our previous results.
+
+Supervised Learning:
+
+Based on our unsupervised learning, we have two reduced dimensioned datasets. The COVID-19 dataset will serve as the data to build a model to predict the COVID/Immunity Score, and the Individual Health Dataset will help us build a model to predict the Health Score. Our next step is to separate our data into training data and testing data and to test our models.
+
+We also need to work on using the Recipe 1M dataset to create a model to recognize the picture and get the dietary information out of it so it can be projected onto the models to predict the Immunity Score and the Health Score.
+
+We plan on using Regression Models and Neural Network Models as our Supervised Learning Techniques.
+
 
 # References
 
