@@ -1,7 +1,7 @@
-## Predicting Nutrition and Immunity Scores Using a CNN Model
+# Predicting Nutrition and Immunity Scores Using a CNN Model
 
 
-# Summary
+## Summary
 
 Description: This image depicts the finalized goal, which is to output nutrition, healthy, and immunity score information from an inputted image.
 
@@ -13,6 +13,12 @@ The outcome of this project would be a better understanding of what constitutes 
 
 From studying the nutrition intake of countries around the world and their respective COVID-19 stats (affected, deaths, recoveries) we hope to predict from a person&#39;s diet whether they have covid/chances of getting covid. Our team is aware that nutrition is not the only feature which affects the chances of getting or fighting COVID-19. We are hoping that on the larger scale, the other features are neutralized and averaged out. If our team finds evidence that they are not, we will manipulate our data and use some sort of Unsupervised Learning Technique to divide our data set into various clusters which will be analyzed separately.
 
+## Introduction and Background
+
+With Covid-19 posing a worldwide health risk and impacting so many people’s lives, it is essential to use every tool at our disposal to help fight against this disease. One likely important factor in immune response to the virus is nutritional status. In fact, increasing evidence is showing that poor nutritional profiles, and factors like obesity and lack of exercise are correlated with poorer outcomes when confronted with the virus (Belanger). This may be a contributor to poorer outcomes among minorities and lower-income populations with less access to nutritionally dense food. 
+
+## Methods
+
 **Dataset 1 Exploration**
 
 COVID Healthy Diet dataset - [https://www.kaggle.com/mariaren/covid19-healthy-diet-dataset/notebooks?sortBy=hotness&amp;group=everyone&amp;pageSize=20&amp;datasetId=618335](https://www.kaggle.com/mariaren/covid19-healthy-diet-dataset/notebooks?sortBy=hotness&amp;group=everyone&amp;pageSize=20&amp;datasetId=618335)
@@ -21,9 +27,9 @@ This dataset has fat quantity, energy intake (kcal), food supply quantity (kg), 
 
 Different food group supply quantities, nutrition values, obesity, and undernourished percentages are obtained from Food and Agriculture Organization of the United Nations FAO website.
 
-**Data Cleaning**
+**Step 1: Data Cleaning**
 
-**Step 1:** Removing unnecessary columns and data normalization and scaling -
+**Cleaning Dataset 1 with Normalization:** Removing unnecessary columns and data normalization and scaling -
 
 - The datasets had a column that contains information about the unit of rest of the columns. So we could just remove this column and use the information it provided.
 
@@ -37,7 +43,7 @@ After scaling -
 
 ![](images/pop_scaled.png)
 
-**Step 2:** Dealing with data types and missing values -
+**Dealing with Null Values in Dataset 1 :** Dealing with data types and missing values -
 
 - The &#39;Undernourished&#39; feature had percentage values in String data type. For values that were below 2.5% the dataset denotes &#39;&lt;2.5&#39;. We converted all the string values to numeric data type and changed &#39;&lt;2.5&#39; to 2 as a crude way to handle the issue.
 
@@ -48,7 +54,7 @@ After scaling -
 - As we can see, there are quite a few missing values. Although there are some datapoints with missing labels. We removed these rows first, since we won&#39;t be able to use the datapoints that do not have label values.
 - Then, we used K-Nearest Neighbours algorithm to impute missing values and got a heatmap with no missing values - ![](images/nomissed_val.png)
 
-**Data Visualizations**
+**Step 2: Data Visualizations**
 
 To see the correlation between features in the datasets, we calculated the Correlation matrix and generated the plots.
 
@@ -72,7 +78,7 @@ Our dataset provided country-wide information for the consumption and supply (in
 
 This correlation matrix provides useful insight into both the intra-relationship between the dietary intake of different food items of people in a country as well as the relationship between the dietary intake and the statistics of each country in the COVID-19 pandemic. For instance, we can see the relatively high positive correlation of obesity with the consumption of animal products and animal fats, depicting the intra-relationship of three features. We can further note that obesity is relatively highly correlated with the country statistics for confirmed, recovered, and active cases, depicting the relationship between the dietary intake and some country-wide statistics of the COVID-19 pandemic. Therefore, the correlation matrix above gives us an idea of where our model may be drawing information from and how each feature may influence its predictions.
 
-**Unsupervised Learning:**
+**Step 3: Unsupervised Learning**
 
 We ran a k-Means clustering on our dataset to see if there are any clusters. We plotted the elbow curve for the loss score of the k-Means algorithm. We ran for a number of clusters upto 20.
 
@@ -82,7 +88,7 @@ Hence, it seems that there are no clusters forming in the dataset. Below figure 
 
 ![](images/elbow.png)
 
-**Dimensionality Reduction:**
+**Step 4: Dimensionality Reduction**
 
 We ran Principal Component Analysis on the dataset.
 
@@ -140,7 +146,43 @@ The examination information of the people in the dataset (only including blood p
 
 In this plot we color each of the data points in the projection for the Nutritional Information Data to the first two components with its associated BMI rating of being overweight (blue), normal weight (green), or underweight (red). Here we can see that the majority of the people in the study are overweight according to their recorded BMI&#39;s, but we also see that in the first two principal components, the people who are overweight, underweight, and normal weight cannot be linearly separated. This gives us some intuition to the complexity that our model for predicting health information from a person&#39;s diet must be in order to give accurate results.
 
-**Data Analysis and Conclusions**
+**Combining Data**
+
+After looking at our data seperately, we combined our Covid-19 and health data to better understand the correlations between nutrition and health data.
+
+**Plot 6** [](images/Correlation_nutrition_mortality.png)
+
+**Plot 7** [](images/co_mortality.png)
+
+## Training our Models ##
+
+**Stage 1: FineTuned ResNet18**
+
+**Plot 8** [](images/co_finetuned_res18.53.58 AM.png)
+
+**Plot 9** [](images/co_training_data.png)
+
+**Stage 2: Learning from Country-wise Nutrition Data**
+
+**Plot 10** [](images/co_learn_by_country.png)
+
+**Stage 3: Regression Model**
+
+**Plot 11** [](images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
+
+**Plot 12** [](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
+
+**Plot 13** [](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
+
+**Plot 14** [](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
+
+**Addendum**
+
+**Plot 15** [](images/Screen Shot 2020-12-07 at 7.55.26 AM.png)
+
+Utilized Google Cloud's AutoML to increase labeling accuracy.
+
+## Data Analysis and Conclusions ##
 
 Dimensionality Reduction
 
