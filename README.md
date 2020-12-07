@@ -213,7 +213,7 @@ Overall, our results were a mixture of predictable and surprising. While we expe
 
 Lastly, we took a major takeaway from this project that while there was plenty of data available, it was not always in the format we needed and required cleaning, exploring, and lots of work to make it usable for the end goal of our project.
 
-**Next Steps**
+## Next Steps ##
 
 For our next steps, we want to increase the accuracy of our training model by adding more data and labeling to food images and Covid-19 health outcomes, Next, we want to continue to train with tools that can handle larger sets of data in the cloud. Furthermore, in the long-term, we want to build a front-end so that users can interact with our models. Lastly, as previously mentioned, we want to take the final step of linking our two stages to provide more relevant insights.
 
