@@ -182,17 +182,16 @@ Dataset 2: 34 out of 46
 **Stage 3: Regression Model**
 
 **Plot 11** 
-![](images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
-This graph
+![](/images/Screen Shot 2020-12-07 at 7.54.53 AM.png)
 
 **Plot 12** 
-![](images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
+![](/images/Screen Shot 2020-12-07 at 7.55.04 AM.png)
 
 **Plot 13** 
-![](images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
+![](/images/Screen Shot 2020-12-07 at 7.55.12 AM.png)
 
 **Plot 14** 
-![](images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
+![](/images/Screen Shot 2020-12-07 at 7.55.18 AM.png)
 
 **Addendum**
 
