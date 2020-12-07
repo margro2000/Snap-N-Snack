@@ -209,7 +209,7 @@ Utilized Google Cloud's AutoML to increase labeling accuracy.
 
 One of the most important aspects of our project was breaking up the project into stages. Initially, we aimed to create two different stages working with the health and Covid-19 data seperately and then bringing the results together. However, bringing the data together would take more time than expected and will need to be addded into the next steps portion of our project. 
 
-Overall, our results were a mixture of predictable and surprising. This was because mortality.. 
+Overall, our results were a mixture of predictable and surprising. While we expected that factors like obesity, high blood pressure, and others would likely be linked to a high mortality rate, it was surprising how important these sort of factors were for predicting outcomes.
 
 Lastly, we took a major takeaway from this project that while there was plenty of data available, it was not always in the format we needed and required cleaning, exploring, and lots of work to make it usable for the end goal of our project.
 
